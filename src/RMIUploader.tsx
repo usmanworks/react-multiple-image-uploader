@@ -76,7 +76,7 @@ const RMIUploader: React.FC<RMIUploaderProps> = ({
   return (
     <Card>
       <Row>
-        <Col span={10}>
+        <div className="upload-container">
           <ImageUploading
             multiple
             value={images}
@@ -122,8 +122,8 @@ const RMIUploader: React.FC<RMIUploaderProps> = ({
               </div>
             )}
           </ImageUploading>
-        </Col>
-        <Col span={14}>
+        </div>
+        <div className="display-container">
           <div className="media-library">
             {dataSources.map((img, index) => {
               const includeImage = selectedImages.find((image) => {
@@ -143,7 +143,7 @@ const RMIUploader: React.FC<RMIUploaderProps> = ({
               );
             })}
           </div>
-        </Col>
+        </div>
         <Divider />
       </Row>
       <Row>

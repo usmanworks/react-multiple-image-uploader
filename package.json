@@ -5,7 +5,7 @@
   "description": "A react component for uploading and preview multiple images",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
-  "author":{
+  "author": {
     "name": "Arjun Ghimire",
     "email": "arjunghimire0714@gmail.com",
     "url": "https://code4ever.com"
@@ -18,13 +18,16 @@
   "dependencies": {
     "antd": "^4.7.3",
     "prop-types": "^15.7.2",
-    "react-images-uploading": "^3.1.2"
+    "react-images-uploading": "^3.1.2",
+    "tslib": "^2.3.1"
   },
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "publishConfig": {"access": "public"},
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@rollup/plugin-commonjs": "^16.0.0",

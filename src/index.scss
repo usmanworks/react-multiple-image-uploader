@@ -11,6 +11,16 @@
   margin: 20px;
 }
 
+$small: 815px;
+
+.display-container, .upload-container {
+  @media (max-width: $small) {
+    width: 100%;
+    margin-left: 0px;
+  }
+  width: 48%,
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
