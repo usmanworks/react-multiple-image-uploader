@@ -32,6 +32,7 @@ interface RIUploaderProps {
   onRemove: (e) => void;
   warnMessage: string;
   dataSources: DataSource[];
+  imageLimit: number;
 }
 
 export default RIUploaderProps;

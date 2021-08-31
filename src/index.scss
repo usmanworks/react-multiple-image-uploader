@@ -9,6 +9,10 @@
 }
 .upload-image-preview {
   margin: 20px;
+  svg {
+    width: 100px !important;
+    height: 20px !important;
+  }
 }
 
 $small: 815px;

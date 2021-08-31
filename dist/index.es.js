@@ -24231,7 +24231,7 @@ exports.default = ReactImageUploading;
 
 var ImageUploading = /*@__PURE__*/getDefaultExportFromCjs(dist);
 
-var css_248z$3 = "@charset \"UTF-8\";\n.image-card {\n  display: inline-block;\n  position: relative; }\n  .image-card input[type=\"checkbox\"][id^=\"cb\"] {\n    display: none; }\n  .image-card label {\n    border: 4px solid #fff;\n    padding: 3px;\n    display: block;\n    position: relative;\n    margin: 10px;\n    cursor: pointer;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .image-card label::before {\n    background-color: white;\n    color: white;\n    content: \" \";\n    display: block;\n    border: 1px solid #0073aa;\n    position: absolute;\n    top: -5px;\n    left: -5px;\n    width: 25px;\n    height: 25px;\n    text-align: center;\n    line-height: 28px;\n    transition-duration: 0.4s;\n    transform: scale(0); }\n  .image-card label img {\n    height: 80px;\n    width: 80px;\n    transition-duration: 0.2s;\n    transform-origin: 50% 50%; }\n  .image-card :checked + label {\n    border-color: #0073aa; }\n  .image-card :checked + label::before {\n    content: \"✓\";\n    background-color: #0073aa;\n    transform: scale(1);\n    z-index: 9; }\n  .image-card :checked + label img {\n    transform: scale(0.9);\n    box-shadow: 0 0 5px #333;\n    z-index: -1; }\n  .image-card .options {\n    position: absolute;\n    top: 8px;\n    right: 12px;\n    z-index: 1;\n    bottom: auto;\n    margin-right: 0; }\n";
+var css_248z$3 = "@charset \"UTF-8\";\n.image-card {\n  display: inline-block;\n  position: relative; }\n  .image-card input[type=\"checkbox\"][id^=\"cb\"] {\n    display: none; }\n  .image-card svg {\n    width: 100px !important;\n    height: 20px !important; }\n  .image-card label {\n    border: 4px solid #fff;\n    padding: 3px;\n    display: block;\n    position: relative;\n    margin: 10px;\n    cursor: pointer;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .image-card label::before {\n    background-color: white;\n    color: white;\n    content: \" \";\n    display: block;\n    border: 1px solid #0073aa;\n    position: absolute;\n    top: -5px;\n    left: -5px;\n    width: 25px;\n    height: 25px;\n    text-align: center;\n    line-height: 28px;\n    transition-duration: 0.4s;\n    transform: scale(0); }\n  .image-card label img {\n    height: 80px;\n    width: 80px;\n    transition-duration: 0.2s;\n    transform-origin: 50% 50%; }\n  .image-card :checked + label {\n    border-color: #0073aa; }\n  .image-card :checked + label::before {\n    content: \"✓\";\n    background-color: #0073aa;\n    transform: scale(1);\n    z-index: 9; }\n  .image-card :checked + label img {\n    transform: scale(0.9);\n    box-shadow: 0 0 5px #333;\n    z-index: -1; }\n  .image-card .options {\n    position: absolute;\n    top: 8px;\n    right: 12px;\n    z-index: 1;\n    bottom: auto;\n    margin-right: 0; }\n";
 styleInject(css_248z$3);
 
 var CCard = function (_a) {
@@ -24267,7 +24267,7 @@ CImage.propTypes = {
     size: propTypes.string,
 };
 
-var css_248z$1 = ".upload-container {\n  cursor: pointer;\n  text-align: center;\n  padding: 20px;\n  margin: 20px;\n  border: 2px dashed #f0f0f0 !important; }\n  @media (max-width: 815px) {\n    .upload-container svg {\n      width: 17px !important;\n      height: 22px !important; } }\n  .upload-container svg {\n    width: 100px;\n    height: 27px; }\n\n.upload-drag {\n  border: 2px dashed #096dd9 !important; }\n\n.upload-text {\n  font-size: 14px; }\n  @media (max-width: 815px) {\n    .upload-text {\n      font-size: 12px; } }\n";
+var css_248z$1 = ".upload-container {\n  cursor: pointer;\n  text-align: center;\n  padding: 20px;\n  margin: 20px;\n  border: 2px dashed #f0f0f0 !important; }\n  @media (max-width: 815px) {\n    .upload-container svg {\n      width: 17px !important;\n      height: 22px !important; } }\n  .upload-container svg {\n    width: 100px;\n    height: 40px; }\n\n.upload-drag {\n  border: 2px dashed #096dd9 !important; }\n\n.ant-upload-drag-icon svg {\n  width: 100px;\n  height: 40px; }\n\n.upload-text {\n  font-size: 14px; }\n  @media (max-width: 815px) {\n    .upload-text {\n      font-size: 12px; } }\n";
 styleInject(css_248z$1);
 
 var CUpload = function (_a) {
@@ -24284,7 +24284,7 @@ CUpload.propTypes = {
     onImageUpload: propTypes.func,
 };
 
-var css_248z = ".media-library {\n  height: 230px;\n  overflow: auto;\n  display: flex;\n  margin: 20px;\n  border: 2px dashed #f0f0f0 !important;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.upload-image-preview {\n  margin: 20px; }\n\n.display-container, .upload-container {\n  width: 48%; }\n  @media (max-width: 815px) {\n    .display-container, .upload-container {\n      width: 100%;\n      margin-left: 0px; } }\n\n::-webkit-scrollbar {\n  width: 8px; }\n\n::-webkit-scrollbar-track {\n  background: #f1f1f1; }\n\n::-webkit-scrollbar-thumb {\n  background: #888; }\n\n::-webkit-scrollbar-thumb:hover {\n  background: #555; }\n";
+var css_248z = ".media-library {\n  height: 230px;\n  overflow: auto;\n  display: flex;\n  margin: 20px;\n  border: 2px dashed #f0f0f0 !important;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.upload-image-preview {\n  margin: 20px; }\n  .upload-image-preview svg {\n    width: 100px !important;\n    height: 20px !important; }\n\n.display-container, .upload-container {\n  width: 48%; }\n  @media (max-width: 815px) {\n    .display-container, .upload-container {\n      width: 100%;\n      margin-left: 0px; } }\n\n::-webkit-scrollbar {\n  width: 8px; }\n\n::-webkit-scrollbar-track {\n  background: #f1f1f1; }\n\n::-webkit-scrollbar-thumb {\n  background: #888; }\n\n::-webkit-scrollbar-thumb:hover {\n  background: #555; }\n";
 styleInject(css_248z);
 
 /*
@@ -24380,7 +24380,7 @@ var RMIUploader = function (_a) {
     var _c = useState$1([]), selectedImages = _c[0], setSelectedImages = _c[1];
     var maxNumber = 69;
     var onChange = function (imageList) {
-        if (imageList.length > 7) {
+        if (imageList.length > 20) {
             message.warn(warnMessage);
         }
         else {
@@ -24454,6 +24454,7 @@ RMIUploader.propTypes = {
     warnMessage: propTypes.string,
     dataSources: propTypes.array,
     onRemove: propTypes.func,
+    imageLimit: propTypes.number
 };
 
 export { RMIUploader };

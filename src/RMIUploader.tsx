@@ -44,7 +44,7 @@ const RMIUploader: React.FC<RMIUploaderProps> = ({
   const maxNumber = 69;
 
   const onChange = (imageList: ImageListType) => {
-    if (imageList.length > 7) {
+    if (imageList.length > 20) {
       message.warn(warnMessage);
     } else {
       setImages(imageList as never[]);
@@ -186,6 +186,7 @@ RMIUploader.propTypes = {
   warnMessage: PropTypes.string,
   dataSources: PropTypes.array,
   onRemove: PropTypes.func,
+  imageLimit: PropTypes.number
 };
 
 export default RMIUploader;
