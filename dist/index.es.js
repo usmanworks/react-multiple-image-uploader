@@ -24380,7 +24380,7 @@ var RMIUploader = function (_a) {
     var _c = useState$1([]), selectedImages = _c[0], setSelectedImages = _c[1];
     var maxNumber = 69;
     var onChange = function (imageList) {
-        if (imageList.length > 20) {
+        if (imageList.length > 50) {
             message.warn(warnMessage);
         }
         else {
